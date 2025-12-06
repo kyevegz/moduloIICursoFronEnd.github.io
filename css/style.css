@@ -37,6 +37,15 @@ Selector de tipo id.
 }
  */
 
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .producto-tarjeta{
     width: 280px;
@@ -74,3 +83,44 @@ Selector de tipo id.
     background-color:cornflowerblue ;
     transition: 0.5s ;
 }
+
+/*Tarjetas del reto*/
+
+.section-target{
+    display: inline-block;
+    
+}
+.target-class{
+    display: inline-block;
+    background-color: rgb(222, 157, 170);
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    color:crimson;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.img-target{
+    width: 90%;
+    margin: 5px;
+}
+
+.contact{
+    background-color:lawngreen;
+    color:darkgreen;
+    text-align: center;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    font-size: 20px;
+
+}
+
+.contact:hover{
+    transform: scale(1.1);
+    transition: .3s ;
+}
+
+/*header para el position*/
