@@ -88,3 +88,30 @@ body{
     color: black;
     margin-left: 10px;
 }
+
+/* tarjetas del main (index) */
+
+.contenedor-productos{
+    display: flex;
+    
+}
+.card-collares, .card-aretes, .card-anillos, .card-pulseras{
+    /* background-image: url("./../images/sitioJoyeria/card_collares.jpg"); */
+    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+    height: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.card-parrafo{
+    background-color: chartreuse;
+    display: block;
+    height: auto;
+}
+/* fin tarjetas del main  */
