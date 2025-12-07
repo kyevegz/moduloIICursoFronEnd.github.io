@@ -1,10 +1,69 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    
     
 }
 
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(212, 254, 255);
+    color: black;
+
+}
+
+.header-index{
+    background: linear-gradient(45deg, rgb(172, 220, 255), rgb(196, 215, 255), rgb(172, 172, 255),rgb(196, 215, 255), rgb(172, 220, 255));
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(39, 0, 169);
+}
+
+.nav-index{
+    background: linear-gradient(90deg, rgb(100, 146, 255), rgb(196, 215, 255), rgb(177, 201, 255), rgb(196, 215, 255),  rgb(100, 146, 255));
+    padding: 15px;
+    
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.nav-list li{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav-list li a{
+    color: black;
+    font-size: 23px;
+    /* background-color: red; */
+    display: block;
+    padding: 5px;
+    
+}
+
+#inicio-logo{
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    
+}
+
+.main-container{
+    background-color: green;
+    text-align: justify;
+}
+
+.footer-index{
+    background-color: yellow;
 }
