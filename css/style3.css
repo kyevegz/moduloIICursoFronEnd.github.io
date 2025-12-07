@@ -148,7 +148,7 @@ body{
 
 /* más vendidos */
 
-.contenedor-vendidos{
+.contenedor-vendidos, .contenedor-collabs{
     /* background-color: blue; */
     display: flex;
     justify-content: space-evenly;
@@ -160,3 +160,19 @@ body{
 }
 
 /* fin más vendidos */
+
+/* collabs  */
+.card-collabs{
+    width: 20%;
+    display: block;
+    background: linear-gradient( rgb(109, 109, 255), rgb(213, 128, 255), rgb(68, 255, 124));
+    aspect-ratio: 1/1;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.card-collabs img{
+    width: 100%;
+    border-radius: 50%;
+}
+/* fin collabs */
