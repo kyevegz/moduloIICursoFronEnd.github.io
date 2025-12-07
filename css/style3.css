@@ -60,7 +60,6 @@ body{
 }
 
 .main-container{
-    background-color: rgb(212, 254, 255);
     text-align: justify;
 }
 
@@ -146,3 +145,18 @@ body{
 
 
 /* fin index presentación */
+
+/* más vendidos */
+
+.contenedor-vendidos{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-mas_vendidos{
+    width: 15%;
+    display: block;
+}
+
+/* fin más vendidos */
