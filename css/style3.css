@@ -20,7 +20,8 @@ body{
     padding: 8px;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(39, 0, 169);
+    
+    color:  rgb(39, 0, 169);
 }
 
 .nav-index{
@@ -93,7 +94,7 @@ body{
 
 .contenedor-productos{
     display: flex;
-    
+    background-color: red
 }
 .card-collares, .card-aretes, .card-anillos, .card-pulseras{
     /* background-image: url("./../images/sitioJoyeria/card_collares.jpg"); */
@@ -101,8 +102,10 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20%;
-    height: 300px;
+    width: 25%;
+    aspect-ratio: 1/1; /*lo investigué aparte porque me daba ansiedad que no fuera perfectamente cuadrado jajaja, y 
+    aunque todavía no entramos en diseño responsive, me es inevitable, sorry, me da cosita que al minimizar 
+    la pantalla se desacomode jajaj */
     border-radius: 30px;
     padding: 20px;
     text-align: center;
@@ -115,3 +118,31 @@ body{
     height: auto;
 }
 /* fin tarjetas del main  */
+
+/* index presentación */
+
+.presentation-1{
+    /* background-color: aquamarine; */
+    display: flex;
+    padding: 50px;
+}
+
+.presentation-1 img{
+    margin-left: 30px;
+}
+.presentation-1 p, .presentation-2 p{
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.presentation-2{
+    padding: 50px;
+}
+.presentation-2 p{
+    display: inline-block;
+}
+
+
+
+/* fin index presentación */
