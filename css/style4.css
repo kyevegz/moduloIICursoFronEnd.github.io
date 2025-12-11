@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 30px;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.tarjeta{
+    background: linear-gradient(90deg, rgba(0, 33, 248, 0.971), rgb(47, 106, 255), rgb(2, 230, 255), rgb(173, 206, 255) );
+    width: 20%;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    /* padding: 30px; */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+   
+}
+
+.tarjeta-abajo{
+    background: linear-gradient(45deg, rgb(134, 255, 132), rgb(7, 109, 0), rgb(11, 159, 0), rgb(201, 255, 191) );
+    width: 100%;
+    height: 50%;
+    
+    border-radius: 0 50% 0 0;
+    
+    
+}
+
+.tarjeta img{
+    z-index: 1100;
+    margin-bottom: -20px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.tarjeta img:hover{
+    filter: drop-shadow(4px 4px 4px rgba(0, 17, 255, 0.5));   
+    transform: scale(1.1);
+}
+
+.nombre-card{
+    z-index: 5000;
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    left: 18px;
+    font-size: 25px;
+     font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  color:rgb(111, 193, 207);
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+  padding: 2px;
+  
+    
+}
+
+.logo-card{
+    z-index: 6000;
+    position: absolute;
+    width: 140px;
+    top: 10px;
+    margin-right: -200px;
+    
+
+}
+
