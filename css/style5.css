@@ -8,3 +8,51 @@
 body{
     background-color: white;
 }
+
+.navbar{
+    padding: 0 40px;
+    /* background-color: red; */
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar ul li{
+    padding: 10px 0;
+}
+
+.item-navbar img{
+    width: 3rem;
+}
+
+.item-special-navbar{
+    margin-left: auto;
+    
+
+}
+
+.btn-navbar{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 100px;
+}
+
+
+#btn_unirseahora{
+    background-color: black;
+    color: white;
+
+}
+
+.select-item{
+    display: flex;
+    background-color: red;
+    height: 100%;
+    align-items: center;
+}
