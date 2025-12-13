@@ -10,8 +10,8 @@ body{
 }
 
 .navbar{
-    padding: 0 40px;
-    /* background-color: red; */
+    padding: 0px 40px;
+    background-color: red;
     font-weight: 600;
     font-size: 0.85rem;
 }
@@ -20,11 +20,16 @@ body{
     list-style: none;
     align-items: center;
     gap: 2rem;
+    
 }
 
 .navbar ul li{
-    padding: 10px 0;
+    
+    
+    background-color: blue;
+    
 }
+
 
 .item-navbar img{
     width: 3rem;
@@ -50,9 +55,9 @@ body{
 
 }
 
-.select-item{
-    display: flex;
-    background-color: red;
-    height: 100%;
-    align-items: center;
+
+
+#navbar-rewards{
+    border-bottom: 2px solid green;
+    
 }
