@@ -7,6 +7,7 @@
 
 body{
     background-color: white;
+    margin-top: 52px;
 }
 
 .navbar{
@@ -14,6 +15,9 @@ body{
     background-color: red;
     font-weight: 600;
     font-size: 0.85rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .navbar ul{
     display: flex;
@@ -55,9 +59,101 @@ body{
 
 }
 
-
+#btn_iniciarsesion{
+    background-color: transparent;
+   
+}
 
 #navbar-rewards{
     border-bottom: 2px solid green;
     
 }
+
+/*main container*/
+
+.main-container{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*fin main container*/
+/*Aside de starbucks*/
+.aside{
+    background: linear-gradient(60deg, #194031, #0B593C, #0D734D);
+    width: 40%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.title-aside-mayus{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 40px;
+    
+}
+
+.title-aside-mayus2{
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+.title-aside-minus{
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.area-buttons{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: space-evenly;
+}
+/*fin aside de starbucks*/
+
+/*section deslizable (main container right*/
+.container-right{
+    width: 60%;
+    overflow-y: auto;
+    /* background-color: purple; */
+    color: rgb(42, 42, 42);
+    
+}
+
+.title-container-right{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.title-estrella{
+    font-size: 20px;
+}
+
+.section-div-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    margin: 40px 100px;
+
+}
+.section-div-1 div{
+    width: 145px;
+    padding: 0 10px;
+}
+
+.section-div-1 div img{
+    width: 130px;
+}
+
+.section-div-1 div p{
+    text-align: center;
+}
+/*fin del section deslizable*/
