@@ -280,10 +280,41 @@ body{
 .area-card-sbx div p{
     font-weight: normal;
 }
-
-
-
-
         /*---------- fin de ordena y paga--------*/
 
+
+.conoce-mas{
+    background-color: #ECEBE5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.conoce-mas div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    
+}
+
+.conoce-mas div div{
+    flex-direction: column;
+    
+    width: 160px;
+    /* background-color: red; */
+}
+
+.conoce-mas div div p a{
+    color: #0B593C
+}
+
+.conoce-mas div div p a:hover{
+    text-decoration: none;
+}
+
+.conoce-mas div div p a:visited{
+    text-decoration: none;
+}
 /*fin del section deslizable*/
