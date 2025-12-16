@@ -188,4 +188,43 @@ body{
 }
         /*-------- fin recompensas---------------*/
 
+        /*----------cómo obtener recompensas--------*/
+.como-obtener-recompensas{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    padding: 5px 30px;
+    margin: 0 auto;
+}
+
+.como-obtener-recompensas div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: red; */
+    width: max-content;
+    padding: 10px;
+    
+}
+
+/* .como-obtener-recompensas div img{
+    width: 125px;
+} */
+
+.green-circle{
+    width: 35px;
+    height: 35px;
+    background-color: #194031;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: auto;
+}
+        /*---------- fin de cómo obtener recompensas--------*/
+
 /*fin del section deslizable*/
