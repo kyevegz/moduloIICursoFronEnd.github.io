@@ -156,4 +156,36 @@ body{
 .section-div-1 div p{
     text-align: center;
 }
+
+
+        /*--------recompensas---------------*/
+
+.recompensas{
+    background-color: #F1F0EB;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 250px;
+
+
+}
+
+.recompensas div{
+    width: 370px;
+    
+}
+
+.recompensas div p{
+    padding: 0 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.recompensas div img{
+    width: 365px;
+}
+        /*-------- fin recompensas---------------*/
+
 /*fin del section deslizable*/
