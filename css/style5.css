@@ -227,4 +227,63 @@ body{
 }
         /*---------- fin de cómo obtener recompensas--------*/
 
+
+        
+        /*----------Ordena y paga--------*/
+.ordena-y-paga{
+    background-color: #EDEBE9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+.ordena-y-paga div{
+    width: 710px;
+    /* background-color: yellow; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ordena-y-paga div div{
+    font-weight: bold;
+}
+
+.ordena-y-paga div .container-star{
+    width: 140px;
+}
+
+.ordena-y-paga div .container-metodos-p{
+    width: 220px;
+    padding: 5px;
+}
+
+.ordena-y-paga div .container-metodos-p img{
+    margin-right: 25px;
+}
+
+.area-card-sbx{
+    width: 520px;
+    padding: 0 100px;
+}
+
+
+.area-card-sbx div{
+    flex-direction: column;
+    width: 220px;
+}
+
+.area-card-sbx div p{
+    font-weight: normal;
+}
+
+
+
+
+        /*---------- fin de ordena y paga--------*/
+
 /*fin del section deslizable*/
