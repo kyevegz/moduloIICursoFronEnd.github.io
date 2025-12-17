@@ -7,12 +7,12 @@
 
 body{
     background-color: white;
-    margin-top: 52px;
+    margin-top: 92px;
 }
 
 .navbar{
-    padding: 0px 40px;
-    background-color: red;
+    padding: 30px 70px;
+    background-color: white;
     font-weight: 600;
     font-size: 0.85rem;
     position: fixed;
@@ -27,12 +27,7 @@ body{
     
 }
 
-.navbar ul li{
-    
-    
-    background-color: blue;
-    
-}
+
 
 
 .item-navbar img{
@@ -316,5 +311,95 @@ body{
 
 .conoce-mas div div p a:visited{
     text-decoration: none;
+}
+
+
+
+.experencia-llena-de{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 530px;
+    margin: 0 auto;
+    
+}
+
+.experencia-llena-de p{
+    text-align: center;
+    padding: 0 40px;
+}
+
+.experencia-llena-de h3{
+    font-size: 16px;
+    padding: 0;
+    text-align: center;
+}
+
+.descargar-sect{
+   
+    width: 530px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer{
+
+}
+
+.container-enlaces{
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.container-enlaces div{
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    margin: 0 30px;
+    line-height: 2;
+}
+
+.container-enlaces div span{
+    font-size: 20px;
+    color: #212529;
+}
+
+.container-enlaces div a{
+    text-decoration: none;
+    color: #777777;
+    font-size: 16px;
+    
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 770px;
+    margin: 0 auto;
+    
+
+}
+
+.footer ul li{
+    margin: 0 10px;
+}
+.footer ul li a{
+    color: #999999;
+    text-decoration: none;
+}
+
+.footer span{
+    font-size: 10px;
+    color: #999999;
+    
 }
 /*fin del section deslizable*/
