@@ -338,15 +338,11 @@ body{
 }
 
 .descargar-sect{
-   
+
     width: 530px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.footer{
-
 }
 
 .container-enlaces{
