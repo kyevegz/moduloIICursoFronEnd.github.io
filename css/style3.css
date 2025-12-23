@@ -107,13 +107,16 @@ body{
 
 .contenedor-productos{
     display: flex;
-    background-color: red;
+    /* background-color: red; */
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 30px 0;
 }
 .card-collares, .card-aretes, .card-anillos, .card-pulseras{
     /* background-image: url("./../images/sitioJoyeria/card_collares.jpg"); */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,16 +131,36 @@ body{
     
 }
 
-
+.card-anillos:hover, .card-aretes:hover, .card-pulseras:hover, .card-collares:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
 
 .card-parrafo{
-    background-color: rgba(255, 255, 255, 0.309);
+    background-color:  #adebb3da;
     display: block;
     height: auto;
+    padding: 15px 8px;
 }
 
 .parrafo-title{
-    
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f8049;
+    border-bottom: 2px solid #1f8049;
+    padding: 0 5%;
+}
+
+.parrafo-ver_mas{
+    color: #1f8049;
+}
+
+.parrafo-ver_mas:hover{
+    cursor: pointer;
+    color:#134629;
+    transform: scale(1.5);
+    transition: .5s;
 }
 /* fin tarjetas del main  */
 
