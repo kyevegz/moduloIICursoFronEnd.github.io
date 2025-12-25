@@ -199,11 +199,14 @@ body{
     /* background-color: blue; */
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+    overflow: scroll;
     margin: 50px 0;
 }
 
 .card-mas_vendidos, .card-ult_lanza{
+    flex: 1 0 auto;
     width: 15%;
     display: flex;
     /* background-color: #9090c9; */
@@ -214,7 +217,7 @@ body{
     flex-wrap: wrap;
     align-items: start;
     position: relative;
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 
 .card-mas_vendidos img, .card-ult_lanza img{
