@@ -195,7 +195,7 @@ body{
 
 /* más vendidos */
 
-.contenedor-vendidos{
+.contenedor-vendidos, .contenedor-ultimos_lanzamientos{
     /* background-color: blue; */
     display: flex;
     justify-content: space-evenly;
@@ -203,7 +203,7 @@ body{
     margin: 50px 0;
 }
 
-.card-mas_vendidos{
+.card-mas_vendidos, .card-ult_lanza{
     width: 15%;
     display: flex;
     /* background-color: #9090c9; */
@@ -214,14 +214,15 @@ body{
     flex-wrap: wrap;
     align-items: start;
     position: relative;
+    margin: 20px 0;
 }
 
-.card-mas_vendidos img{
+.card-mas_vendidos img, .card-ult_lanza img{
     width: 100%;
     border-radius: 5px;
 }
 
-.card-mas_vendidos:hover{
+.card-mas_vendidos:hover, .card-ult_lanza:hover{
     transform: scale(1.1);
 }
 .card-titulo-articulo{
