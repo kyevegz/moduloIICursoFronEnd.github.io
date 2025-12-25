@@ -218,6 +218,7 @@ body{
     align-items: start;
     position: relative;
     margin: 20px 20px;
+    overflow: hidden;
 }
 
 .card-mas_vendidos img, .card-ult_lanza img{
@@ -322,6 +323,22 @@ body{
 
 /* fin más vendidos */
 
+
+/*listón de nuevo para últimos lanzamientos*/
+.ribbon {
+    position: absolute;
+    top: 27px;
+    left: -75px;
+    width: 250px;
+    text-align: center;
+    transform: rotate(-45deg);  background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    color: #FFFFFF;
+    line-height: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 /* collabs  */
 
 
