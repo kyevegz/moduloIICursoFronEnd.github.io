@@ -195,18 +195,26 @@ body{
 
 /* más vendidos */
 
-.contenedor-vendidos, .contenedor-ultimos_lanzamientos{
+.contenedores-con-productos{
     /* background-color: blue; */
     display: flex;
     justify-content: space-evenly;
     /* flex-wrap: wrap; */
-    flex-wrap: nowrap;
-    overflow: scroll;
+    padding: 50px 0;
     margin: 50px 0;
+    width: 100%;
+
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --carrusel;
+    scroll-snap-type: x mandatory;
 }
 
 .card-mas_vendidos, .card-ult_lanza{
-    flex: 1 0 auto;
+    scroll-snap-align: start;
+
+    flex: 1 0 14em;
     width: 15%;
     display: flex;
     /* background-color: #9090c9; */
@@ -219,6 +227,56 @@ body{
     position: relative;
     margin: 20px 20px;
     overflow: hidden;
+}
+
+/*carrusel*/
+.contenedores-con-productos::-webkit-scrollbar{
+    display: none;
+}
+
+#carru1{
+    anchor-name: --carrusel;
+}
+
+#carru2{
+    anchor-name: --carrusel2;
+}
+ 
+#carru1::scroll-button(right), #carru1::scroll-button(left){
+    position-anchor: --carrusel;
+}
+
+#carru2::scroll-button(right), #carru2::scroll-button(left){
+    position-anchor: --carrusel2;
+}
+
+.contenedores-con-productos::scroll-button(right), .contenedores-con-productos::scroll-button(left){
+    content: "🡢";
+    background-color: #ADEBB3;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    box-shadow: 1px 1px 5px rgba(9, 53, 15, 0.3);
+    cursor: pointer;
+    position: fixed;
+    
+    position-area: right center;
+    translate: -100%;
+}
+
+
+.contenedores-con-productos::scroll-button(left){
+    content: "🡠";
+    position-area: left center;
+    translate: 100%;
+}
+
+.contenedores-con-productos::scroll-button(*):disabled{
+    opacity: 0.5;
+    cursor: auto;
 }
 
 .card-mas_vendidos img, .card-ult_lanza img{
@@ -558,3 +616,14 @@ body{
     color:#4e4ea5
 }
 /*fin card de equipo*/
+
+
+/*responsive*/
+
+/*celular*/
+
+@media (min-width: 500px){
+    
+}
+
+/*tablet*/
