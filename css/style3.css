@@ -12,7 +12,7 @@
 
 body{
     color: black;
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .header-index{
@@ -112,7 +112,7 @@ body{
     justify-content: space-between;
     margin: 30px 0;
 }
-.card-collares, .card-aretes, .card-anillos, .card-pulseras{
+.card-tipo-produc{
     /* background-image: url("./../images/sitioJoyeria/card_collares.jpg"); */
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@ body{
     
 }
 
-.card-anillos:hover, .card-aretes:hover, .card-pulseras:hover, .card-collares:hover{
+.card-tipo-produc:hover{
     transform: scale(1.1);
     transition: .3s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
@@ -170,6 +170,10 @@ body{
     /* background-color: aquamarine; */
     display: flex;
     padding: 50px;
+}
+
+.presentation-1 img{
+    width: 30%;
 }
 
 .presentation-1 img{
@@ -225,7 +229,7 @@ body{
     flex-wrap: wrap;
     align-items: start;
     position: relative;
-    margin: 20px 20px;
+    margin: 20px;
     overflow: hidden;
 }
 
@@ -453,7 +457,7 @@ body{
 }
 
 .card-collabs div{
-    margin: 0 1rem;
+    margin:  1rem;
     padding: 0 30px 10px;
     /* background-color: greenyellow; */
     height: min-content;
@@ -463,6 +467,7 @@ body{
     box-shadow: none;
     border-radius: 0;
     width: 9em;
+    
 }
 
 .card-collabs div hr{
@@ -509,7 +514,6 @@ body{
     justify-content: space-around;
     
 }
-
 
 .item-estilos-tendencia{
     display: flex;
@@ -622,8 +626,141 @@ body{
 
 /*celular*/
 
-@media (min-width: 500px){
+@media ((max-width: 500px) and (min-width: 320px)){
+
+    .contenedores-con-productos{
+        flex-wrap: wrap;
+        overflow-x: none;
+        flex-direction: row;
+    }
+    .card-mas_vendidos, .card-ult_lanza{
+        scroll-snap-type: none;
+        width: 45%;
+        margin: 4px;
+        flex: none;
+    }
+
+    .card-mas_vendidos:hover, .card-ult_lanza:hover{
+        transform: none;
+    }
+
     
+
+.card-titulo-articulo{
+    font-size: 15px;
+}
+
+.card-precio{
+    font-size: 22px;
+}
+
+.card-puntuacion, .card-est-ventas, .card-similares{
+    font-size: 9px;
+}
+
+.btn-comprar, .btn-anadir-carrito, .btn-lista-deseos{
+    font-size: 10px;
+}
+
+.contenedores-con-productos::scroll-button(right), .contenedores-con-productos::scroll-button(left){
+    display: none;
+}
+
+
+
+
+
+
+/* .card-award{
+    color: red;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    position: absolute;
+    font-size: 3.8vw;
+    top: 7%;
+    left: 0;
+
+} */
+
 }
 
 /*tablet*/
+
+@media ((max-width: 1024px)) {
+    .presentation-1 img{
+        width: 50%;
+    }
+    
+
+    .item-estilos-tendencia{
+        padding: 10px 0;
+    }
+
+    .item-estilos-tendencia img{
+        width: 100%;
+    }
+    .title-item-tendencias{
+        font-size: 3.2rem;
+    }
+
+    .card-tipo-produc{
+        width: 40%;
+        margin: 5px 0;
+    }
+
+    .parrafo-title{
+        font-size: 16px;
+    }
+
+    .card-collabs{
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card-collabs img{
+        
+        align-self: center;
+        width: 45%;
+    }
+
+    .card-collabs div{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-collabs div img{
+        align-self: center;
+    }
+    .a-ver_coleccion{
+        width: fit-content;
+        align-self: center;
+    }
+
+    .contenedor-equipo{
+        flex-direction: column;
+    }
+    .card-equipo{
+        width: 100%;
+    }
+
+    /* .card-equipo h1{
+        font-size: 28px;
+    }
+
+    .card-equipo h4{
+        font-size: 12px;
+    }
+
+    .card-equipo p{
+        font-size: 14px;
+    } */
+}
+
+/* @media (max-width: 590px){
+    .contenedor-equipo{
+        flex-direction: column;
+    }
+
+    .card-equipo{
+        width: 100%;
+    }
+} */
