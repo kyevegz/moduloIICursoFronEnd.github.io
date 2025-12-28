@@ -80,9 +80,16 @@ body{
 .footer-index{
     background: linear-gradient(rgb(120, 230, 200), rgb(120, 190, 230), rgb(240, 179, 255));
     padding: 20px;
-    display: block;
+    
 }
 
+.footer-index ul{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .footer-index ul li{
     list-style: none;
@@ -90,18 +97,79 @@ body{
     color:rgb(18, 19, 95);
     /* background-color: pink; */
     display: block;
+    width: 35%;
+    margin: 5px;
     
     
 }
 
+.footer-index ul li ul{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
 .footer-index ul li ul li{
     font-size: 18px;
+    /* background-color: blue; */
+    width: 45%;
+    padding: 8px;
+    margin: 5px;
+    
+}
+
+.footer-index ul li a{
+    display: block;
 }
 
 .footer-index ul li a, .footer-form{
     color: black;
     margin-left: 10px;
+    
+    
 }
+
+.footer-index ul li ul li a:hover{
+    transform: translateX(10px);
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+.footer-form{
+    /* background-color: red; */
+    padding: 8px;
+    border: 1px solid black;
+    width: 200%;
+}
+
+.footer-form input[type="text"], .footer-form input[type = "email"], .footer-form textarea{
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px #001367 solid;
+    background: transparent;
+    width: 100%;
+    
+}
+
+.footer-form input::-webkit-input-placeholder, .footer-form textarea::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    
+}
+
+.footer-form-btn{
+    padding: 5px 20px;
+    font-size: 16;
+    color: #f0f0ff;
+    background-color: #242451;
+    border-radius: 5px;
+    border: 1px solid #001367;
+}
+
 
 /* tarjetas del main (index) productos */
 
@@ -702,10 +770,14 @@ body{
     .card-equipo p{
         font-size: 14px;
     }
+
+    .card-award{
+        font-size: 8vw;
+    }
 }
 
 /*celular*/
-@media ((max-width: 520px) and (min-width: 320px)){
+@media (max-width: 520px){
 
     .nav-list li a{
         font-size: 15px;
@@ -794,5 +866,30 @@ body{
     }
     
 
-    
+    .card-award{
+        font-size: 9vw;
+    }
+
+    .btn-lista-deseos{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 830px){
+    .footer-index ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-index ul li{
+        width: 100%;
+    }
+    .footer-index ul li ul li{
+        width: 100%;
+    }
+
+    .footer-form{
+        width: 100%;
+    }
+
 }
