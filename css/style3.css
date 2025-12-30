@@ -170,6 +170,16 @@ body{
     border: 1px solid #001367;
 }
 
+.marca-footer{
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
 
 /* tarjetas del main (index) productos */
 
