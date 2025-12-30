@@ -280,7 +280,7 @@ body{
     scroll-snap-type: x mandatory;
 }
 
-.card-mas_vendidos, .card-ult_lanza{
+.card-producto-vent{
     scroll-snap-align: start;
 
     flex: 1 0 14em;
@@ -348,12 +348,12 @@ body{
     cursor: auto;
 }
 
-.card-mas_vendidos img, .card-ult_lanza img{
+.card-producto-vent img{
     width: 100%;
     border-radius: 5px;
 }
 
-.card-mas_vendidos:hover, .card-ult_lanza:hover{
+.card-producto-vent:hover{
     transform: scale(1.1);
 }
 .card-titulo-articulo{
@@ -686,12 +686,128 @@ body{
 }
 /*fin card de equipo*/
 
+/*----------COLLARES--------------*/
+.list-contenedores-con-productos{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.titulo-producto{
+    font-size: 5rem;
+}
+
+.section-filtrar{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;flex-direction: row;
+    padding: 10px 0;
+}
+
+.section-filtrar span{
+    font-size: 16px;
+}
+
+.btn-estilos{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 55px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+#ik{
+    color: white;
+    background: linear-gradient(180deg, red, orange, yellow, green, blue, purple );
+
+}
+
+#frutiger{
+    background: linear-gradient(180deg, #04bcff, #77ffab, #00ffc8 );
+
+}
+
+#oro{
+    background: linear-gradient(180deg, #a47e00, #ffc400, #e2b215 );
+
+}
+
+#plata{
+    background: linear-gradient(180deg, #ececec, #c1c1c1, #7b7b7b );
+
+}
+
+#y2k{
+    color: white;
+    background: linear-gradient(180deg, #460057, #7c5bcf, #1000c4 );
+
+}
+
+.nombre-filtrado{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: row;
+    align-items:last baseline;
+}
+.titulo-filtrado{
+    font-size: 3.5rem;
+}
+
+.hr-separacion{
+    margin-left: 3px;
+    display:block;
+    width: 100%;
+    color: silver;
+    border: 1px solid silver;
+    
+}
+
+.section-paginas{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+#pagina-seleccionada{
+    color:silver;
+    background-color: #adebb3be;
+} 
+
+#pagina-seleccionada:hover{
+    cursor:auto;
+    transform: none;
+    transition: none;
+}
+.section-paginas a{
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    display: flex;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ADEBB3;
+    color:#134629;
+    aspect-ratio: 1/1;
+    margin: 0 8px;
+}
+
+.section-paginas a:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 
 /*responsive*/
-
-
-
-
 
 /*tablet*/
 
@@ -806,14 +922,14 @@ body{
         overflow-x: none;
         flex-direction: row;
     }
-    .card-mas_vendidos, .card-ult_lanza{
+    .card-producto-vent{
         scroll-snap-type: none;
         width: 45%;
         margin: 4px;
         flex: none;
     }
 
-    .card-mas_vendidos:hover, .card-ult_lanza:hover{
+    .card-producto-vent:hover{
         transform: none;
     }
 
